@@ -30,7 +30,7 @@ folder_path = "datasets/resume_dataset/"
 
 for filename in os.listdir(folder_path):
     if filename.endswith(".pdf"):
-        print(f"📄 Processing {filename}")
+        print(f"Processing {filename}")
         file_path = os.path.join(folder_path, filename)
         resume_text = extract_resume_text(file_path)
         matches = match_skills(resume_text, job_data)
